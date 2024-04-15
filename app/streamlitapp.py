@@ -12,13 +12,13 @@ st.set_page_config(layout='wide')
 
 # Setup the sidebar
 with st.sidebar: 
-    st.image('/Users/abuzarakhtar/Documents/GitHub/LipNet/app/1-0flvittznpkh8qkj7upleq.png')
+    st.image('/Users/abuzarakhtar/Documents/GitHub/First-Minor-Project/app/1-0flvittznpkh8qkj7upleq.png')
     st.title('LipChat')
     st.info('I m Abuzar from BTCSE-A (Roll No. 2021-310-014), creator of a cutting-edge Streamlit app. Using a CNN deep learning model, my app converts lip movements in videos into text, enhancing speech recognition. This project showcases my expertise in AI and machine learning.')
 
 st.title('LipChat Full Stack App') 
 # Generating a list of options or videos 
-options = os.listdir(os.path.join('/Users/abuzarakhtar/Documents/GitHub/LipNet/app/data/s1'))
+options = os.listdir(os.path.join('/Users/abuzarakhtar/Documents/GitHub/First-Minor-Project/app/data/s1'))
 selected_video = st.selectbox('Choose video', options)
 
 # Generate two columns 
@@ -29,9 +29,9 @@ if options:
     # Rendering the video 
     with col1: 
         st.info('The video below displays the converted video in mp4 format')
-        file_path = os.path.join('/Users/abuzarakhtar/Documents/GitHub/LipNet/app/data/s1', selected_video)
+        file_path = os.path.join('/Users/abuzarakhtar/Documents/GitHub/First-Minor-Project/app/data/s1', selected_video)
         # Path to the output video file (based on the selected video filename)
-        output_file_path = os.path.join('/Users/abuzarakhtar/Documents/GitHub/LipNet/app', 'test_video.mp4')
+        output_file_path = os.path.join('/Users/abuzarakhtar/Documents/GitHub/First-Minor-Project/app', 'test_video.mp4')
 
         os.system(f'ffmpeg -i {file_path} -vcodec libx264 {output_file_path} -y')
 

@@ -27,6 +27,6 @@ def load_model() -> Sequential:
 
     model.add(Dense(41, kernel_initializer='he_normal', activation='softmax'))
 
-    model.load_weights(os.path.join('/Users/abuzarakhtar/Documents/GitHub/LipNet/models - checkpoint 96/checkpoint'))
+    model.load_weights(os.path.join('/Users/abuzarakhtar/Documents/GitHub/First-Minor-Project/models - checkpoint 96/checkpoint'))
 
     return model
