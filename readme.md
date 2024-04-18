@@ -53,7 +53,7 @@ To run this app, please adjust all the file paths according to your system.
    ```
 
 
-2. Follow the on-screen instructions to input video files or use the webcam for lipreading.
+2. Follow the on-screen instructions to input video files for lipreading.
 
 ## Contributing
 
